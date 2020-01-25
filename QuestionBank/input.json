@@ -1,0 +1,17 @@
+{
+  "questions":
+          [
+            {
+              "content": "How are you feeling today?",
+              "options": ["Great", "Normal", "Bad"],
+              "weightDist": [3, 4, 5]
+            },
+            {
+              "content": "Do you have negative thoughts?",
+              "options": ["Never", "Sometimes", "Always"],
+              "weightDist": [4, 5, 6]
+
+            }
+          ]
+
+}
