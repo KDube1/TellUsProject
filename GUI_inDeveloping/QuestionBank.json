@@ -1,0 +1,291 @@
+{
+  "questions": [
+    {
+      "content": "How are you feeling today?",
+      "options": [
+        "Great",
+        "Normal",
+        "Bad"
+      ],
+      "weightDist": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "content": "Are you a student? if yes, what level of education are you on?",
+      "options": [
+        "no",
+        "yes, I am a University Student",
+        "yes, I am in high school"
+      ],
+      "weightDist": [
+        6,
+        4,
+        4
+      ]
+    },
+    {
+      "content": "In the past six months, have you been anxious, worried, or scared about a lot of things in your life?",
+      "options": [
+        "never",
+        "sometimes",
+        "constantly"
+      ],
+      "weightDist": [
+        0,
+        2,
+       4
+      ]
+    },
+    {
+      "content": "Ever feel like your worry is out of your control ?",
+      "options": [
+        "never",
+        "sometimes",
+        "constantly"
+      ],
+      "weightDist": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "content": "How often do you feel : restless, agitated, frantic, tense",
+      "options": [
+        "never",
+        "sometimes",
+        "constantly"
+      ],
+      "weightDist": [
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "content": "how many times do you feel like you cannot fall asleep and/or do not feel well rested when you wake up",
+      "options": [
+        "never",
+        "sometimes",
+        "constantly"
+      ],
+      "weightDist": [
+        0,
+        4,
+        6
+      ]
+    },
+    {
+      "content": "do these issues sometimes express themselves physically? Ex: chest pain, dizziness, cold/hot flashes, stomach sickness",
+      "options": [
+        "not at all",
+        "sometimes",
+        "often"
+      ],
+      "weightDist": [
+        0,
+        4,
+        6
+      ]
+    },
+    {
+      "content": "how often do you feel sad ? ",
+      "options": [
+        "almost never",
+        "sometimes",
+        "most of the time"
+      ],
+      "weightDist": [
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "content": "I feel so guilty that I can barely take it",
+      "options": [
+        "almost never",
+        "sometimes",
+        "most of the time"
+      ],
+      "weightDist": [
+        0,
+        4,
+        6
+      ]
+    },
+    {
+      "content": "Do you most of the time feel angry at yourself ?",
+      "options": [
+        "never",
+        "sometimes",
+        "always"
+      ],
+      "weightDist": [
+        0,
+        4,
+        6
+      ]
+    },
+    {
+      "content": "How often do you feel worn out ? ",
+      "options": [
+        "almost never",
+        "sometimes",
+        "always"
+      ],
+      "weightDist": [
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "content": "When I wake up in the morning, there is nothing I look up to",
+      "options": [
+        "almost never",
+        "sometimes",
+        "alwyas"
+      ],
+      "weightDist": [
+        0,
+        4,
+        6
+      ]
+    },
+    {
+      "content": "I get mad at myself if i do not reach the goals I set out to reach",
+      "options": [
+        "almost never",
+        "sometimes",
+        "always"
+      ],
+      "weightDist": [
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "content": "When something is bothering me, I cannot stop thinking about it",
+      "options": [
+        "almost never",
+        "sometimes",
+        "always"
+      ],
+      "weightDist": [
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "content": "I have a persistent feeling of emptiness",
+      "options": [
+        "almost never",
+        "sometimes",
+        "always"
+      ],
+      "weightDist": [
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "content": "I have slowed down (physically or mentally)",
+      "options": [
+        "almost never",
+        "sometimes",
+        "always"
+      ],
+      "weightDist": [
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "content": "I feel sad about myself",
+      "options": [
+        "almost never",
+        "sometimes",
+        "always"
+      ],
+      "weightDist": [
+        0,
+        4,
+        6
+      ]
+    },
+    {
+      "content": "I feel like crying for no apparent reason",
+      "options": [
+        "almost never",
+        "sometimes",
+        "always"
+      ],
+      "weightDist": [
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "content": "I over analyze my relationship with others, finding problems that do not really exist",
+      "options": [
+        "almost never",
+        "sometimes",
+        "always"
+      ],
+      "weightDist": [
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "content": "I am (or I have been told that I am) unusually irritable ",
+      "options": [
+        "almost never",
+        "sometimes",
+        "always"
+      ],
+      "weightDist": [
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "content": "I feel like I do not deserve love",
+      "options": [
+        "almost never",
+        "sometimes",
+        "always"
+      ],
+      "weightDist": [
+        0,
+        4,
+        6
+      ]
+    },
+    {
+      "content": "I think about ending my own life",
+      "options": [
+        "never",
+        "sometimes",
+        "always"
+      ],
+      "weightDist": [
+        0,
+        6,
+        9
+      ]
+    }
+  ]
+}
+ 

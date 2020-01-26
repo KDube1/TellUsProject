@@ -1,0 +1,30 @@
+/* BASIC STYLES */
+body {
+    background-image: url("/bearBackground.jpg");
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    }
+     
+    h1 {
+        font-size: 150px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 75px;
+        text-align: center;
+    }
+    
+    optionButton {
+        margin: auto;
+        display: flex; justify-content: center;
+    }
+
+    #gotQuestion {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+    }
