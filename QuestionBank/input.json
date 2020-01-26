@@ -7,11 +7,27 @@
               "weightDist": [3, 4, 5]
             },
             {
-              "content": "Do you have negative thoughts?",
-              "options": ["Never", "Sometimes", "Always"],
-              "weightDist": [4, 5, 6]
+              
+              "content": "Are you a student? if yes, what level of education are you on?",
+              "options": ["no","yes, I am a University Student", "yes, I am in high school"],
+              "weightDist": [6, 4, 4]
+            },
+            {
+              "content": "In the past six months, have you been anxious, worried, or scared about a lot of things in your life?",
+              "options": ["never", "sometimes", "constantly"],
+              "weightDist": [0, 2, 4]
 
-            }
+            },
+            {
+              "content": "Ever feel like your worry is out of your control ?",
+              "options": ["never","sometimes","constantly"],
+              "weightDist": [0, 2, 4]
+
+            },
+            {
+
+
+            },
           ]
 
 }
