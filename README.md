@@ -1,4 +1,4 @@
-# ConUHacks 2020 Submission: Tellus's Mental Heath Challenge
+# Tell-us : a ConUHack2020 hackathon submission.
 
 A submission for ConUHacks2020 hosted by HackConcordia. Our team consists of Krishna Dube, Andres Daniel Oros Halas, Duc Nguyen and Minh Tran.
 
