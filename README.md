@@ -2,11 +2,9 @@
 
 A submission for ConUHacks2020 hosted by HackConcordia. Our team consists of Krishna Dube, Andres Daniel Oros Halas, Duc Nguyen and Minh Tran.
 
-## What does our web app do:
+## Description:
 
-To assist patients in self-diagnosing mental health issues and giving a tentative diagnosis. The app can then point troubled people to professional psychiatrists in Montreal.
-
-## Requirement:
+According to Canadian Mental Health Association, 49% of people who went through anxiety and depression have never seen a doctor. This application will help the user find a diagnosis and will locate the nearest institution that will provide professional help.
 
 * \>= python3
 * pip 
