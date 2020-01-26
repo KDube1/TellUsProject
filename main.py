@@ -24,6 +24,7 @@ lbl.place(relx= 0.32, rely = 0.03)
 quitBtn = Button(root, text='Quit', style='TButton', command=root.destroy)
 
 quitBtn.place(relx=0.87,rely=0.93)
+
 def destroyButtons():
         btnQ1.place_forget()
         btnQ2.place_forget()
