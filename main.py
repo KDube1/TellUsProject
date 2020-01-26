@@ -12,6 +12,7 @@ root.configure(background='white')
 currentQ= random.randint(0, 14)
 
 totalSum  =0
+questionsAsked = 0
 
 style.configure('TButton', font= ('calibri', 10), foreground='black')
 
@@ -28,36 +29,61 @@ quitBtn.place(relx=0.87,rely=0.93)
 def buttonOneCallback():
     global totalSum
     global currentQ
+    global questionsAsked
     totalSum+= QBank[currentQ].weights[0]
-    if totalSum>=30:
+    if questionsAsked>=5:
+        totalSum+= QBank[currentQ].weights[0]
         print("done")
         return
     else:
-        currentQ= random.randint(0,14)
+        flag = True
+        while flag:
+            tempVal = random.randint(0, 14)
+            if (tempVal != currentQ):
+                flag = False
+        currentQ = tempVal
         updateQuestion(QBank[currentQ].content)
+        questionsAsked+=1
+
 
 def buttonTwoCallback():
     global totalSum
     global currentQ
+    global questionsAsked
     totalSum+= QBank[currentQ].weights[1]
-    if totalSum>=30:
+    if questionsAsked>=5:
+        totalSum+= QBank[currentQ].weights[1]
         print("done")
         return
     else:
-        currentQ= random.randint(0,14)
+        flag = True
+        while flag:
+            tempVal = random.randint(0, 14)
+            if (tempVal != currentQ):
+                flag = False
+        currentQ = tempVal
         updateQuestion(QBank[currentQ].content)
+        questionsAsked+=1
 
 def buttonThreeCallback():
     global totalSum
     global currentQ
-
+    global questionsAsked
     totalSum+= QBank[currentQ].weights[2]
-    if totalSum>=30:
+    if questionsAsked>=5:
+        totalSum+= QBank[currentQ].weights[2]
         print("done")
         return
     else:
-        currentQ= random.randint(0,14)
+        flag = True
+        while flag:
+            tempVal= random.randint(0,14)
+            if (tempVal!= currentQ):
+                flag = False
+        currentQ = tempVal
         updateQuestion(QBank[currentQ].content)
+        questionsAsked+=1
+
 
 
 btnQ1 = Button(root, text='Placeholder', command=buttonOneCallback)
@@ -70,8 +96,8 @@ btnQ3 = Button(root, text='Placeholder3', command=buttonThreeCallback)
 btnQ3.place(relx = 0.73, rely = 0.5)
 
 questionText = "The question would go here"
-questionLbl = Label(root, text=questionText, font=("Arial", 15), background = 'white')
-questionLbl.place(relx= 0.3,rely=0.3)
+questionLbl = Label(root, text=questionText, font=("Arial", 12), background = 'white')
+questionLbl.place(relx= 0.06,rely=0.3)
 
 root.tk.call('wm', 'iconphoto', root._w, PhotoImage(file='conU.png'))
 
@@ -117,7 +143,11 @@ def readQuestion():
         QBank.append(temp)
 
 def updateQuestion(a):
-    questionLbl.config(text=a)
+    questionLbl.config(text=QBank[currentQ].content)
+    btnQ1.config(text= QBank[currentQ].options[0])
+    btnQ2.config(text= QBank[currentQ].options[1])
+    btnQ3.config(text= QBank[currentQ].options[2])
+
 
 
 
@@ -125,6 +155,6 @@ readQuestion()
 
 
 
-updateQuestion(QBank[currentQ].content)
+updateQuestion(currentQ)
 
 root.mainloop()
