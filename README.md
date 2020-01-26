@@ -8,7 +8,7 @@ To assist patients in self-diagnosing mental health issues and giving a tentativ
 
 ## Requirement:
 
-* >= python3
+* \>= python3
 * pip 
 
 To install the required pip modules:
