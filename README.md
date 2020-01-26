@@ -1,5 +1,5 @@
 To install the required pip modules:
 
 ```
-pip install -r requirement.txt
+pip3 install -r requirement.txt
 ```
