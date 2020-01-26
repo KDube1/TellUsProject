@@ -25,6 +25,25 @@ quitBtn = Button(root, text='Quit', style='TButton', command=root.destroy)
 
 quitBtn.place(relx=0.87,rely=0.93)
 
+def endOfQuestions():
+    global totalSum
+    if totalSum>=0 and totalSum<8:
+        btnQ1.place(relx= 10000000000,rely= 100000000000)
+        btnQ2.place(relx=10000000000,rely= 100000000000)
+        btnQ3.place(relx=10000000000,rely= 100000000000)
+        questionLbl.config(text="You may be feeling anxiety and stress at certain times  \n but are overall in a fairly good headspace. It is estimated that \n one in ten Canadians struggle with  anxiety.")
+    elif totalSum>=8 and totalSum<15:
+        btnQ1.place(relx=10000000000, rely= 100000000000)
+        btnQ2.place(relx=10000000000, rely= 100000000000)
+        btnQ3.place(relx=10000000000, rely= 100000000000)
+        questionLbl.config(text="You may be experiencing issues with your mental health such. \n nearly 1 in 5 Canadians deal with mental health related \n issues at one point or another. If you feel like you're in a downward spiral, \n consider contacting crisis services at 1-833-456-4566")
+    else:
+        btnQ1.place(relx=10000000000, rely= 100000000000)
+        btnQ2.place(relx=10000000000, rely= 100000000000)
+        btnQ3.place(relx=10000000000, rely= 100000000000)
+        questionLbl.config(text="Consider reaching out for help. The suicide \n prevention hotline is 1-833-456-4566. In addition, crisis services is at 1-833-456-4566. \n You do not need to struggle alone. ")
+
+
 
 def buttonOneCallback():
     global totalSum
@@ -33,8 +52,7 @@ def buttonOneCallback():
     totalSum+= QBank[currentQ].weights[0]
     if questionsAsked>=5:
         totalSum+= QBank[currentQ].weights[0]
-        print("done")
-        return
+        endOfQuestions()
     else:
         flag = True
         while flag:
@@ -53,8 +71,7 @@ def buttonTwoCallback():
     totalSum+= QBank[currentQ].weights[1]
     if questionsAsked>=5:
         totalSum+= QBank[currentQ].weights[1]
-        print("done")
-        return
+        endOfQuestions()
     else:
         flag = True
         while flag:
@@ -72,8 +89,7 @@ def buttonThreeCallback():
     totalSum+= QBank[currentQ].weights[2]
     if questionsAsked>=5:
         totalSum+= QBank[currentQ].weights[2]
-        print("done")
-        return
+        endOfQuestions()
     else:
         flag = True
         while flag:
