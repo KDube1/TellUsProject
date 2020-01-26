@@ -18,6 +18,6 @@ pip3 install -r requirement.txt
 ```
 
 ## Future Development:
-[x] Basic python gui with I/o handler and JSON file parsing.
-[ ] Remove the python backend to move to PHP + HTML/CSS web app.
+- [x] Basic python gui with I/o handler and JSON file parsing.
+- [ ] Remove the python backend to move to PHP + HTML/CSS web app.
 
