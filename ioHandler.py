@@ -5,6 +5,24 @@ import json
 """
 
 QBank = []
+threhold = 20
+
+class user:
+    point = 0
+    terminate = False
+
+    def __init__(self, geog):
+        self.geog = geog
+
+    def updatePoint(self, point):
+        self.point += point
+        if self.point >= threhold:
+            terminate = True
+
+    def diagnose(self):
+        """
+        TODO: DIAGNOSE THE SYMTOMS
+        """
 
 
 class Question:
